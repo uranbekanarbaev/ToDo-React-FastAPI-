@@ -1,0 +1,334 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+* {
+    font-family: "SUSE", sans-serif;
+    font-weight: 400; /* Example weight */
+    font-style: normal;
+}
+
+body {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.nav-btn {
+    background-color: #28a745;
+}
+
+.nav-btn:hover {
+    background-color: #218838;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form .form-group {
+    margin-bottom: 1rem;
+}
+
+form .form-group:last-child {
+    margin-bottom: 0;
+}
+
+form .error-message {
+    color: #dc3545;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#addnew-button {
+    margin: 50px 50px;
+}
+
+.todo-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    list-style-type: none; 
+    padding: 0;
+    margin: 100px 50px;
+}
+
+.todo-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-update-page-form {
+    text-align: center;
+    align-items: center;
+}
+
+.todo-update-form, .todo-delete-form {
+    margin: 0;
+}
+
+.todo-item form {
+    margin-bottom: 10px;
+}
+
+.todo-item .form-group {
+    margin-bottom: 10px;
+}
+
+.todo-item input[type="text"], .todo-item input[type="checkbox"] {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.todo-item-buttons {
+    width: 49%;
+    padding: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.todo-item-buttons:hover {
+    background-color: #0056b3;
+}
+
+.vertical-nav {
+    width: 10rem;
+}
+
+.author {
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.author h1 {
+    font-size: 2rem; /* Consistent with your existing h1 styling */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Author Content Styling */
+.author-content {
+    display: flex;
+    gap: 40px; /* Adds space between elements */
+}
+
+/* Profile Picture Styling */
+.author-content img {
+    width: 400px; /* Fixed size for profile image */
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtitle Styling */
+.author-content h2 {
+    font-size: 1.8rem; /* Slightly larger than default h2 */
+    color: #007BFF; /* Matches the header color */
+    margin: 10px 0;
+}
+
+/* Paragraph Styling */
+.author-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center; /* Center-align text inside the paragraph */
+    margin-top: 20px;
+    max-width: 800px; /* Constrain width for better readability */
+
+}
+
+.author-content p strong {
+    color: #007BFF; /* Accent color for strong elements */
+}
+
+.author-avatar {
+
+}
+
+.author-avatar img {
+
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .author-content {
+        flex-direction: row; /* Align items in a row for larger screens */
+        align-items: flex-start;
+        text-align: left; /* Left-align text on larger screens */
+        justify-content: center;
+    }
+
+    .author-content img {
+        margin-right: 30px; /* Adds spacing between image and text */
+        margin-bottom: 0; /* Reset bottom margin for larger screens */
+    }
+
+    .author-content h2 {
+        margin-top: 0; /* Align heading with text on larger screens */
+    }
+
+    .author-content p {
+        text-align: left; /* Left-align text inside the paragraph */
+    }
+}
+
+.soc-icons {
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.soc-icons svg {
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0 30px;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.welcome span {
+    color: #007BFF;
+    font-weight: 800;
+}
+
+.welcome h1 {
+    font-weight: 800;
+    font-size: 80px;
+    text-align: left;
+    margin-right: 200px;
+    margin-left: 50px;
+}
+
+.welcome img {
+    width: 400px;
+    margin-right: 120px;
+}
+
+.welcome-buttons {
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+.welcome-text button {
+    margin: 0 30px;
+}

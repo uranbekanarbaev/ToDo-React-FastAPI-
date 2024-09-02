@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO App by Uranbek Anarbaev</title>
+    <link rel="icon" href="../static/todo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+
+    <style>
+        .custom-navbar {
+            background-color: #007bff; /* Blue background color */
+        }
+        .custom-navbar .navbar-brand,
+        .custom-navbar .nav-link {
+            color: white !important; /* White font color */
+        }
+        .custom-navbar .navbar-toggler-icon {
+            filter: invert(1); /* Change toggler icon to white */
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        {% block header %}{% endblock %}
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block header %}
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <a class="navbar-brand" href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+        </svg>  
+        My ToDo App
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link disabled" href="#">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/register">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/todos">My tasks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+
+<div class="welcome">
+    <div class="welcome-text">
+        <h1 class="suse-custom">Schedule your daily tasks with <span>My ToDo</span></h1>
+        <div class="welcome-buttons">
+            <a href="/register"><button type="button" class="btn btn-primary btn-lg">Register</button></a>
+            <a href="/login"><button type="button" class="btn btn-primary btn-lg">Login</button></a>
+        </div>
+    </div>
+    <img src="../static/mainpg.webp" alt="">
+</div>
+
+{% endblock %}
